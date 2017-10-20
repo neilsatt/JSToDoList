@@ -39,11 +39,12 @@ input {
 
 
 #tasks a {
-    margin-right: 0.5em;
+    margin-right: 1em;
 }
+/* inside the tasks section */
 p {
 	margin: 0;
-	padding-bottom: .5em;
+	padding-bottom: 3em;
 }
 .clear {
     clear: both;
