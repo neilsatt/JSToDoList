@@ -1,15 +1,22 @@
 body {
     font-family: Verdana, Arial, Helvetica, sans-serif;
     font-size: 100%;
-    background-color: white;
-    width: 725px;
-    margin: 0 auto;
-    border: 3px solid blue;
-    padding: 0 2em 1em;
+    background-color: #ECF0F4;
+}
+
+#container {
+        border: 1px solid black;
+        padding-left: 2em;
+        padding-right: 2em;
+        padding-bottom: 3em;
+        width: 700px;
+        margin: 0 auto;
+       position: relative;
+       top: 50px;
 }
 h1 { 
     font-size: 150%;
-    color: blue;
+    color: black;
     margin-bottom: .5em;
 }
 label {
@@ -22,12 +29,15 @@ input {
     margin-bottom: 1em;
 }
 #tasks {
-    float: right; 
-    width: 25em;
-    margin: 0 0 .5em;
-	padding: 1em;
-	border: 2px solid black;
+    margin-top: 5px;
+    padding: 1em;
+    float: right;
+    border: 2px solid black;
+    width: 20em;
 }
+
+
+
 #tasks a {
     margin-right: 0.5em;
 }
