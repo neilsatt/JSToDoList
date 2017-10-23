@@ -1,4 +1,8 @@
 "use strict";
+/* 
+    Function accepts accepts array (and checks that it is an array)
+    Call sort method then return the value
+*/
 var sortTaskList = function(tasks) {
     var isArray = Array.isArray(tasks);
     if (isArray) {
@@ -7,6 +11,13 @@ var sortTaskList = function(tasks) {
     return isArray;
 };
 
+/* 
+  Function accepts array, div and event handler
+  Pass the tasks array to the sort function
+  Create the HTML string then add a clickable delete link
+
+
+*/
 var displaySortedTaskList = function(tasks, div, handler) {
     var html = "";
     var isArray = sortTaskList(tasks);
@@ -29,12 +40,23 @@ var displaySortedTaskList = function(tasks, div, handler) {
     } 
 };
 
+/* 
+ Accepts array and an index
+ Sort and return tasks
+ Then remove element at the specified index using splice
+*/
 var deleteTask = function(tasks, i) {  
     var isArray = sortTaskList(tasks);
     if (isArray) { tasks.splice(i, 1); }
 };
 
+/* 
+ Function accepts and returns a string
+ Get first letter, then capitalize it
+ Get remaining letters
+
+*/
 var capitalizeTask = function(task) {
     var first = task.substring(0,1);
-    return first.toUpperCase() + task.substring(1);
+    return first.toUpperCase() + task.substring(1); 
 };
